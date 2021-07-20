@@ -4,9 +4,9 @@ body {
 }
 
 img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  /* width: 100px;
+  height: 100px; */
+  border-radius: 50% !important;
 }
 
 .contact hr {
@@ -35,7 +35,7 @@ img {
   font-family: Verdana;
   text-align: center;
   color: #fff;
-  font-size: 20px;
+  font-size: 1.5vw;
   margin-top: 5px;
 }
 

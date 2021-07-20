@@ -1,30 +1,15 @@
-import React, { Component, useEffect } from "react";
+import React, { Component } from "react";
 import { CONTACTS } from "../shared/contacts";
 
 const RenderContact = ({ contact, onClick }) => {
   return (
     <div key={contact.id} className="contact" onClick={onClick}>
-      <img src={contact.image} alt={contact.name} />
-      <div className="contactName">{contact.name}</div>
+      <img src={contact.image} alt={contact.name} className="img-thumbnail"/>
+      <div className="contactName d-none d-md-inline">{contact.name}</div>
       <hr />
     </div>
   );
 };
-
-// const RenderMsgReceived = ({msg}) => {
-//   return (
-//     useEffect(() => {
-//       setTimeout(() => {
-//         return (
-//           <>
-//           <div className="messageReceived">{msg}</div>
-//           {console.log(msg)}
-//           </>
-//         )
-//       }, 300)
-//     }, [msg])
-//   )
-// }
 
 export default class Main extends Component {
   constructor(props) {
@@ -96,7 +81,6 @@ export default class Main extends Component {
         <>
           <div className="messageSent">{messageSent}</div>
           <div className="messageReceived">{messageSent}</div>
-          {/* <RenderMsgReceived msg={messageSent}/> */}
         </>
       );
     else return <div></div>;
