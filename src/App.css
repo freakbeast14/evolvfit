@@ -1,0 +1,136 @@
+html,
+body {
+  height: 100%;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.contact hr {
+  border-bottom: 3px solid #adff2f;
+}
+
+.contactName {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+}
+
+.contact:hover {
+  cursor: pointer;
+}
+
+.contact-col {
+  background: black;
+  overflow-y: scroll;
+}
+
+.contact-col hr {
+  border-bottom: 3px solid #adff2f;
+}
+
+.contacts{
+  font-family: Verdana;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #adff2f; 
+}
+
+.contact {
+  margin-top: 15px;
+}
+
+.ChatSection header {
+  font-family: Verdana;
+  font-size: 20px;
+  padding: 10px;
+  font-style: oblique;
+  border-bottom: 3px solid #adff2f;
+  color: #fff;
+}
+
+input {
+  border-style: none;
+  background: transparent;
+  outline: none;
+  width: 95%;
+  color: #fff;
+}
+
+button {
+  padding: 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  opacity: 0.5;
+  width: 5%;
+}
+
+button:hover{
+  opacity: 1;
+}
+
+body {
+   background-image: radial-gradient(circle at 0% 0%, #373b52, #252736 51%, #1d1e26); 
+}
+
+.TypeMsg {
+  width: 100%;
+  border-bottom: solid 2px #adff2f;
+}
+
+.ChatSpace{
+  width: 100%;
+  height: 80%;
+}
+
+/* @media screen and (max-width: 768px) {
+  .contactName {
+      display: block;
+  }
+} */
+
+.contactName{
+  display: inline;
+  margin-left: 30px;
+}
+
+.messageSent{
+  background: #adff2f;
+  padding: 10px;
+  border-radius: 5px 5px 0 5px;
+  color: black;
+  float: right;
+  margin-top: 10px;
+  max-width: 40%;
+  overflow-wrap: break-word;
+}
+.messageReceived{
+  background: #adff2f;
+  padding: 10px;
+  border-radius: 5px 5px 5px 0;
+  color: black;
+  float: left;
+  margin-top: 50px;
+  max-width: 40%;
+  overflow-wrap: break-word;
+}
