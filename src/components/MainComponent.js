@@ -98,12 +98,11 @@ export default class Main extends Component {
     return (
       <div className="container-fluid">
         <div className="row vh-100">
-          <div className="col-2 col-md-3 contact-col vh-100">
+          <div className="col-3 contact-col vh-100">
             <div className="contacts">CONTACTS</div>
-            <hr />
-            {contacts}
+            <div>{contacts}</div>
           </div>
-          <div className="col-10 col-md-9 vh-100">
+          <div className="col-9 vh-100">
             {this.RenderChatForm(this.state.selectedContact)}
           </div>
         </div>
